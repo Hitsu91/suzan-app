@@ -23,7 +23,7 @@ export class AuthService {
     this.token = localStorage.getItem('token');
   }
 
-  async initUser() {
+  initUser() {
     if (this.token) {
       this.loading = true;
       this.getAuthenticatedUser()
